@@ -74,8 +74,9 @@ header .logo img {
 .banner1 .banner1-overlay {
     position: absolute;
     width: 100%;
-    aspect-ratio: 4000/2048;background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,0.75) 0%, rgba(166,20,20,0) 100%);
+    aspect-ratio: 4000/2048;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(166, 20, 20, 0) 100%);
     top: 66px;
     color: #fff;
     display: flex;
@@ -98,4 +99,126 @@ header .logo img {
     border: 2px solid #fff;
     margin-top: 8px;
     font-size: 20px;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-header {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 4px 12px;
+}
+
+.category-box {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 4px;
+    column-gap: 4px;
+    padding: 4px 12px;
+}
+
+.category-item {
+    flex-basis: 150px;
+    flex-grow: 1;
+    background-color: greenyellow;
+    padding: 10px;
+    width: auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.category-item:nth-child(1) {
+    background-image: url(assets/img-4000x2048.png);
+}
+
+.category-item:nth-child(2) {
+    background-image: url(assets/phone-categories.avif);
+    background-size: 100%;
+}
+
+.category-item:nth-child(3) {
+    background-image: url(assets/pcacess.jpg);
+}
+
+.category-item:nth-child(4) {
+    background-image: url(assets/phoneaccess.jpg);
+}
+
+.category-item p {
+    color: #fff;
+    background-color: #000000a2;
+    box-shadow: 0 0 20px #000000;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.sell-item-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 8px;
+    row-gap: 8px;
+}
+
+.sell-item {
+    width: 45%;
+    aspect-ratio: 1/1;
+    flex-grow: 100px;
+    flex-basis: 1;
+    align-self: flex-start;
+    color: #000;
+    text-decoration: none;
+}
+
+.sell-item img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: #ccc;
+    border-radius: 8px;
+}
+
+.sell-item .price {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.info-1-line {
+    display: flex;
+    gap: 10px;
+}
+
+.reviews {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.reviews .fa-star {
+    color: #ffbb00;
+}
+
+.reviews-count {
+    color: #8d8d8d;
+}
+
+.product-name {
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+}
+
+.brand-name {
+    color: #4e4e4e;
 }
