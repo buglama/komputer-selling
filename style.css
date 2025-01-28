@@ -222,3 +222,128 @@ header .logo img {
 .brand-name {
     color: #4e4e4e;
 }
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    max-width: 500px;
+    height: 100%;
+    overflow: hidden;
+    transition: .2s all ease-in-out;
+}
+
+.header-menu-btn {
+    font-size: 28px;
+}
+
+.menu:has(#menu-toggle:checked) {
+    width: 100%;
+}
+
+.menu-left {
+    width: 20%;
+    height: 100%;
+    z-index: 99;
+    display: flex;
+    transition: .2s all ease-in-out;
+    transition-delay: .2s;
+}
+
+.menu:has(#menu-toggle:checked) .menu-left {
+    background-color: #000000af;
+    backdrop-filter: blur(10px);
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-main {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80%;
+    overflow: hidden;
+    height: 100%;
+    background-color: #ffffff;
+    color: #212121;
+    padding: 18px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-profile {
+    display: flex;
+    gap: 12px;
+    padding: 8px;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-profile-right {
+    width: 100%;
+}
+
+.menu-profile img {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.menu-profile .user-name-surname {
+    font-size: 22px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-id {
+    font-size: 14px;
+    color: #9c9c9c;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.menu-profile-right button {
+    border: none;
+    background-color: transparent;
+    color: #000;
+}
+
+.fa-user-pen {
+    font-size: 18px;
+}
+
+.menu-items {
+    list-style: none;
+    margin: 30px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-items li a {
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    padding: 8px 0;
+}
+
+.menu-settings {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+    color: #000;
+    text-decoration: none;
+    justify-self: flex-end;
+    padding: 10px 0;
+}
