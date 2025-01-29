@@ -22,6 +22,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    gap: 16px;
 }
 
 header {
@@ -86,7 +87,7 @@ header .logo img {
     aspect-ratio: 4000/2048;
     background: rgb(0, 0, 0);
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(166, 20, 20, 0) 100%);
-    top: 110px;
+    top: 126px;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -415,4 +416,131 @@ header .logo img {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+footer {
+    width: 100%;
+    background-color: #212121;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.footer-social {
+    width: 100%;
+    font-size: 22px;
+    display: flex;
+    gap: 18px;
+}
+
+.footer-social-item {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 8px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease-in-out;
+}
+
+.footer-social-item:focus {
+    background-color: #fff;
+}
+
+.footer-social-item:focus path {
+    stroke: #000;
+}
+
+.footer-section-header {
+    font-size: 28px;
+}
+
+.footer-company-info {
+    font-size: 20px;
+}
+
+.company-info {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.company-info p {
+    color: #999;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-company-info i {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-link-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 49%;
+}
+
+.footer-links a {
+    color: #999;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-links {
+    display: flex;
+    margin-top: 22px;
+}
+
+.footer-link-header {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.footer-other-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-other-links a {
+    color: #fff;
+}
+.footer-rights {
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.footer-logo {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-size: 32px;
+}
+
+.footer-logo img {
+    width: 50px;
+    height: 50px;
 }
