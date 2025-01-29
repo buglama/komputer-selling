@@ -14,17 +14,30 @@
 
     <div class="container">
         <header>
-            <div class="logo">
-                <img src="assets/logo.png" alt="">
-                <p class="logo-name">DIGIPORT</p>
+            <div class="header-top">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="">
+                    <p class="logo-name">DIGIPORT</p>
+                </div>
+                <div class="header-right">
+                    <button class="header-cart-btn">
+                        <i class="fa-light fa-cart-shopping"></i>
+                    </button>
+                    <label for="menu-toggle" class="header-menu-btn">
+                        <i class="fa-light fa-bars"></i>
+                    </label>
+                </div>
             </div>
-            <div class="header-right">
-                <button class="header-cart-btn">
-                    <i class="fa-light fa-cart-shopping"></i>
-                </button>
-                <label for="menu-toggle" class="header-menu-btn">
-                    <i class="fa-light fa-bars"></i>
-                </label>
+            <div class="header-search-box">
+                <form>
+                    <input class="header-search" type="text" name="search-item" id="search-item">
+                    <button type="reset" class="h-search-clear">
+                        <i class="fa-light fa-xmark"></i>
+                    </button>
+                    <button type="submit" class="h-search-search">
+                        <i class="fa-light fa-magnifying-glass"></i>
+                    </button>
+                </form>
             </div>
         </header>
         <section class="banner1">
